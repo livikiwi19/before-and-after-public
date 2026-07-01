@@ -3,10 +3,10 @@
    --------------------------------------------------------- */
 
 :root {
-  --line-color: #F0EFE8;
+  --line-color: #401C19;
   --line-thickness: 2px;
   --handle-size: 20px;
-  --label-color: #F0EFE8;
+  --label-color: #401C19;
   --transition-speed: 0.15s;
 }
 
