@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Before / After — Comparație</title>
+
+<!-- Space Mono typeface -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--
+    BEFORE / AFTER COMPARISON COMPONENT
+    ------------------------------------
+    Replace the two image "src" attributes below with the paths to
+    your own images (e.g. images hosted alongside this file on GitHub Pages,
+    or any public image URL). Both images should share the same aspect
+    ratio for best results.
+  -->
+
+  <div class="compare" id="compare" data-position="65">
+
+    <div class="compare__frame" id="compareFrame">
+
+      <!-- AFTER image (base layer, full width) -->
+      <img
+        class="compare__img compare__img--after"
+        src="after.jpg"
+        alt="Plan propus"
+        draggable="false"
+      >
+
+      <!-- BEFORE image (clipped layer, revealed by the handle) -->
+      <img
+        class="compare__img compare__img--before"
+        src="before.jpg"
+        alt="Plan inițial"
+        draggable="false"
+      >
+
+      <!-- Labels -->
+      <span class="compare__label compare__label--before">PLAN INIȚIAL</span>
+      <span class="compare__label compare__label--after">PLAN PROPUS</span>
+
+      <!-- Divider line + drag handle -->
+      <div class="compare__handle" id="compareHandle" tabindex="0" role="slider"
+           aria-label="Comparație plan inițial / plan propus"
+           aria-valuemin="0" aria-valuemax="100" aria-valuenow="65">
+        <span class="compare__line"></span>
+        <span class="compare__circle"></span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
