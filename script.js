@@ -8,7 +8,7 @@
 
   var isDragging = false;
 
-  var initialPosition = parseFloat(compare.getAttribute('data-position')) || 65;
+  var initialPosition = parseFloat(compare.getAttribute('data-position')) || 35;
 
   function setPosition(percent) {
     percent = Math.min(100, Math.max(0, percent));
